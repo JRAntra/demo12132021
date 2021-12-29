@@ -1,0 +1,26 @@
+[
+    {
+        "brand": "Ford",
+        "model": "F350",
+        "year": 2022,
+        "price": 57000
+    },
+    {
+        "brand": "Porsche",
+        "model": "Cayenne",
+        "year": 2022,
+        "price": 85000
+    },
+    {
+        "brand": "Ferrari",
+        "model": "F420",
+        "year": 2005,
+        "price": 250000
+    },
+    {
+        "brand": "BMW",
+        "model": "M4",
+        "year": 2022,
+        "price": 72000
+    }
+]
