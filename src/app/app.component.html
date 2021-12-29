@@ -4,7 +4,7 @@
       <mat-header-cell *matHeaderCellDef> Brand </mat-header-cell>
       <mat-cell *matCellDef="let row, let i = index">
         <span *ngIf="row.edit">{{ row.brand }} </span>
-        <span *ngIf="!row.edit"><input #brand [value]="row.brand" [(ngModel)] = "row.brand"  /></span>
+        <span *ngIf="!row.edit"><input [(ngModel)] = "row.brand"  /></span>
       </mat-cell>
     </ng-container>
 
@@ -12,7 +12,7 @@
       <mat-header-cell *matHeaderCellDef> Model </mat-header-cell>
       <mat-cell *matCellDef="let row, let i = index">
         <span *ngIf="row.edit">{{ row.model }} </span>
-        <span *ngIf="!row.edit"><input #model [value]="row.model"  [(ngModel)] = "row.model"/></span>
+        <span *ngIf="!row.edit"><input [(ngModel)] = "row.model"/></span>
       </mat-cell>
     </ng-container>
 
@@ -20,7 +20,7 @@
       <mat-header-cell *matHeaderCellDef> Year </mat-header-cell>
       <mat-cell *matCellDef="let row, let i = index">
         <span *ngIf="row.edit">{{ row.year }} </span>
-        <span *ngIf="!row.edit"><input #year [value]="row.year"  [(ngModel)] = "row.year"/></span>
+        <span *ngIf="!row.edit"><input [(ngModel)] = "row.year"/></span>
       </mat-cell>
     </ng-container>
 
@@ -28,7 +28,7 @@
       <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
       <mat-cell *matCellDef="let row, let i = index">
         <span *ngIf="row.edit">{{ row.price }} </span>
-        <span *ngIf="!row.edit"><input #price [value]="row.price" [(ngModel)] = "row.price"/></span>
+        <span *ngIf="!row.edit"><input [(ngModel)] = "row.price"/></span>
       </mat-cell>
     </ng-container>
 

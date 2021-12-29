@@ -61,8 +61,6 @@ export class AppComponent implements OnInit {
   }
 
   public changeEditable(i: number) {
-    // console.log(this.dataSource.filter(car => car.id === i)[0].edit);
-
     this.dataSource.filter((car) => car.id === i)[0].edit =
       !this.dataSource.filter((car) => car.id === i)[0].edit;
   }
@@ -71,20 +69,13 @@ export class AppComponent implements OnInit {
     this.dataSource = this.dataSource.filter((item) => item.id !== i);
   }
 
-  // public onSave(brand:string, model: string, year: number, price:number, rowId: number) {
-    public onSave(row:carModel) {
-
+  public onSave(row: carModel) {
     this.changeEditable(row.id);
-    // this.dataSource.filter(car => car.id === row.id)[0].brand = row.brand;
-    // this.dataSource.filter(car => car.id === row.id)[0].model = row.model;
-    // this.dataSource.filter(car => car.id === row.id)[0].year = row.year;
-    // this.dataSource.filter(car => car.id === row.id)[0].price = row.price;
     this.dataSource = this.dataSource.map((car) => {
       if (car.id === row.id) {
         console.log(car.id);
 
         return {
-          // id: row.id,
           ...car,
           brand: row.brand,
           model: row.model,
@@ -95,6 +86,5 @@ export class AppComponent implements OnInit {
         return car;
       }
     });
-    console.log(this.dataSource);
   }
 }
